@@ -8,6 +8,10 @@ public class Code5_2 {
 		hello();
 		System.out.println("メソッドの呼び出しが終わりました");
 	}
+	//メソッド名:hello
+	//戻り値:なし
+	//引数:なし
+	//処理:引数で受け取った名前を出力
 	public static void hello() {
 		System.out.println("湊さん、こんにちは");
 	}
