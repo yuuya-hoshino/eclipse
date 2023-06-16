@@ -44,7 +44,6 @@ public class Code5_7 {
         System.out.print("文字列を入力してください: ");
         String input = scanner.nextLine();
         
-
         return input + arg;
 	}
 	//メソッド名:intScanner
@@ -58,7 +57,6 @@ public class Code5_7 {
         System.out.print("数字を入力してください: ");
         int input = scanner.nextInt();
         
-
         return input + arg;
     }
 	//メソッド名:doubleScanner
@@ -71,9 +69,7 @@ public class Code5_7 {
 	    Scanner scanner = new Scanner(System.in);
 	    System.out.print("小数を入力してください: ");
 	    double input = scanner.nextDouble();
-	    scanner.nextLine();
 	    
-	
 	    return input + arg;
 	 }
 }
