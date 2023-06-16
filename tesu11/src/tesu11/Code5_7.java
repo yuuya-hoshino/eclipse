@@ -13,6 +13,7 @@ public class Code5_7 {
 		// TODO 自動生成されたメソッド・スタブ
 		int ans = add(100,10);
 		System.out.println("100 + 10 =" + ans);
+		System.out.println(add(add(10,20),add(30,40)));
 	}
 
 }
