@@ -14,6 +14,7 @@ public class Code5_12 {
 		// TODO 自動生成されたメソッド・スタブ
 		int [] array = {1,2,3};
 		printArray(array);
+		//printArrayに対して、arrayのリンクの情報を渡している。
 	}
 
 }
