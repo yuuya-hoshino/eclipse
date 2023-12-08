@@ -1,10 +1,29 @@
 package character;
 
-public class Hero {
+public class Hero interface Version{
 	
 	public String name;//名前を管理する変数
 	public int hp;//HPを管理する変数
 	int level = 999;//レベル（固定）
+	//コンストラクタ（引数：name,hp）
+    public Hero(int hp,String name ) {
+        this.hp = hp;//可変
+        this.name = name;//可変
+    }
+    
+    //コンストラクタ（引数：name）
+    public Hero(String name) {
+        this.hp = 100;//固定
+        this.name = name;//可変
+    }
+    
+    //コンストラクタ（引数：なし）
+        public Hero() {
+            //this.hp = 100;//固定
+            //this.name = "ダミー";//固定
+            //Stringを引数に持つコンストラクタを実行
+            this("ダミー");
+    }
 	
 	/*メソッド名:sleep()
 	  引数:なし
@@ -40,6 +59,9 @@ public class Hero {
 		System.out.println(this.name + "は、逃げ出した!");
 		System.out.println("GAMEOVER");
 		System.out.println("最終HPが" + this.hp + "ポイント回復した");
+	}
+	public void printVersion() {
+		System.out.println("Heroクラスのバージョンは"+"ver1.3です。");
 	}
 }
 
